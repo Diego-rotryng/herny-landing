@@ -1,557 +1,452 @@
 <!doctype html>
-<html lang="es-AR" class="scroll-smooth">
+<html lang="es-AR">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Estudio Jurídico Sabbagh, Testado & Asoc. | Buenos Aires</title>
 
-  <meta name="description" content="Estudio Jurídico con más de 45 años de trayectoria. Derecho laboral, sucesiones y accidentes. Consulta inicial sin cargo. Atención clara y confidencial." />
-  <meta name="robots" content="index,follow" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Estudio Jurídico Sabbagh, Testado & Asoc.</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Cinzel','serif'], sans: ['Inter','system-ui','sans-serif'] },
-          colors: {
-            brand: { DEFAULT:'#9F3B58', 700:'#7b2d44', 300:'#c17c8d' },
-            ink: { 900:'#111827', 700:'#374151', 500:'#6B7280' }
-          },
-          boxShadow: {
-            soft: '0 10px 30px rgba(17,24,39,.10)',
-            deep: '0 18px 60px rgba(17,24,39,.18)',
-            glow: '0 0 0 1px rgba(17,24,39,.06), 0 18px 60px rgba(159,59,88,.18)'
-          },
-          keyframes: {
-            fadeUp: { '0%':{opacity:0,transform:'translateY(18px)'}, '100%':{opacity:1,transform:'translateY(0)'} }
-          },
-          animation: { fadeUp:'fadeUp .85s ease-out both' }
-        }
-      }
-    }
-  </script>
+<meta name="description"
+content="Estudio jurídico con más de 45 años de trayectoria. Derecho laboral, sucesiones y accidentes. Respuesta inmediata del estudio.">
 
-  <style>
-    :root{ --ring: rgba(159,59,88,.28); }
-    ::selection{ background: rgba(159,59,88,.22); }
-    .focus-ring:focus{ outline:none; box-shadow:0 0 0 4px var(--ring); border-color: rgba(159,59,88,.55); }
-    .reveal{ opacity:0; transform: translateY(18px); transition: opacity .85s ease, transform .85s ease; }
-    .reveal.show{ opacity:1; transform: translateY(0); }
-    #progress{ position:fixed; top:0; left:0; height:3px; width:0%; background: linear-gradient(90deg, #9F3B58, rgba(159,59,88,.35)); z-index:9999; }
-  </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LegalService",
-    "name":"Estudio Jurídico Sabbagh, Testado & Asoc.",
-    "areaServed":"AR",
-    "address":{"@type":"PostalAddress","addressLocality":"Buenos Aires","addressCountry":"AR"},
-    "telephone":["+54 11 4953-7866","+54 11 4953-7804","+54 11 4954-1518"],
-    "email":"Info@estudiojuridicost.com.ar",
-    "description":"Estudio jurídico con más de 45 años de trayectoria. Especialistas en derecho laboral, sucesiones y accidentes."
-  }
-  </script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+
+tailwind.config={
+theme:{
+extend:{
+fontFamily:{
+serif:['Cinzel','serif'],
+sans:['Inter','sans-serif']
+},
+colors:{
+brand:'#9F3B58'
+}
+}
+}
+}
+
+</script>
+
+<style>
+
+body{
+font-family:Inter;
+}
+
+h1,h2,h3{
+font-family:Cinzel;
+}
+
+</style>
+
 </head>
 
-<body class="font-sans text-ink-900 bg-slate-50 overflow-x-hidden">
-  <div id="progress"></div>
 
-  <!-- CABEZA DE PÁGINA (TU IMAGEN) -->
-  <!-- Renombrá tu archivo a: cabeza-pagina.jpg y dejalo junto al HTML o en assets/ -->
-  <div class="relative">
-    <img src="cabeza-pagina.jpg" alt="Estudio Jurídico Sabbagh, Testado & Asoc." class="w-full h-[180px] sm:h-[220px] object-cover" />
-    <!-- overlay suave para que quede premium -->
-    <div class="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-slate-50"></div>
-  </div>
 
-  <!-- TOP CONTACT BAR -->
-  <div class="bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 py-3 flex flex-col sm:flex-row gap-2 sm:gap-4 items-start sm:items-center justify-between text-xs text-ink-500">
-      <div class="flex flex-wrap items-center gap-3">
-        <span class="inline-flex items-center gap-2">
-          <span class="w-2 h-2 rounded-full bg-brand"></span>
-          Atención confidencial • Respuesta rápida
-        </span>
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900"
-           href="mailto:Info@estudiojuridicost.com.ar">Info@estudiojuridicost.com.ar</a>
-      </div>
-      <div class="flex flex-wrap items-center gap-3">
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900" href="tel:+541149537866">4953-7866</a>
-        <span class="text-slate-300">/</span>
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900" href="tel:+541149537804">4953-7866/04</a>
-        <span class="text-slate-300">•</span>
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900" href="tel:+541149541518">4954-1518</a>
-      </div>
-    </div>
-  </div>
+<body class="bg-slate-50 text-gray-800">
 
-  <!-- NAV -->
-  <nav class="sticky top-0 z-50 bg-white/92 backdrop-blur border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#inicio" class="flex items-center gap-3">
-        <!-- TU LOGO -->
-        <!-- Renombrá tu archivo a: logo.jpg y dejalo junto al HTML o en assets/ -->
-        <img src="logo.jpg" alt="Logo Estudio Jurídico" class="h-12 w-12 rounded-xl object-cover border border-slate-200 bg-white" />
-        <div class="leading-tight">
-          <div class="font-serif tracking-wide text-lg text-ink-900">Sabbagh, Testado</div>
-          <div class="text-brand uppercase tracking-[0.28em] text-[10px] font-semibold">& Asociados</div>
-        </div>
-      </a>
 
-      <button id="menuBtn" class="lg:hidden px-4 py-2 rounded-xl border border-slate-200 hover:border-slate-300 bg-white shadow-soft">
-        <span class="text-sm font-semibold">Menú</span>
-      </button>
 
-      <div class="hidden lg:flex items-center gap-10 text-xs uppercase tracking-[0.22em] text-ink-700">
-        <a href="#especialidades" class="hover:text-ink-900 transition">Especialidades</a>
-        <a href="#trayectoria" class="hover:text-ink-900 transition">Trayectoria</a>
-        <a href="#proceso" class="hover:text-ink-900 transition">Proceso</a>
-        <a href="#faq" class="hover:text-ink-900 transition">Preguntas</a>
-        <a href="#contacto" class="px-5 py-3 rounded-xl bg-brand text-white font-semibold shadow-glow hover:brightness-110 transition">
-          Enviar consulta
-        </a>
-      </div>
-    </div>
+<!-- CABEZA -->
 
-    <div id="mobileMenu" class="lg:hidden hidden border-t border-slate-200 bg-white">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-3 text-sm">
-        <a href="#especialidades" class="py-2 text-ink-700 hover:text-ink-900">Especialidades</a>
-        <a href="#trayectoria" class="py-2 text-ink-700 hover:text-ink-900">Trayectoria</a>
-        <a href="#proceso" class="py-2 text-ink-700 hover:text-ink-900">Proceso</a>
-        <a href="#faq" class="py-2 text-ink-700 hover:text-ink-900">Preguntas</a>
-        <a href="#contacto" class="py-3 text-center rounded-xl bg-brand text-white font-semibold">Enviar consulta</a>
-      </div>
-    </div>
-  </nav>
+<div>
+<img src="cabeza-pagina.jpg" class="w-full h-[120px] sm:h-[150px] object-cover">
+</div>
 
-  <!-- HERO -->
-  <header id="inicio" class="relative">
-    <div class="max-w-7xl mx-auto px-6 pt-14 pb-16 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-6 reveal">
-        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 text-brand text-xs font-semibold tracking-widest uppercase">
-          +45 años • Excelencia Jurídica
-        </div>
 
-        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-ink-900">
-          Defensa integral <span class="text-brand">con respaldo real</span>.
-        </h1>
 
-        <p class="text-ink-500 text-lg leading-relaxed max-w-xl">
-          Un enfoque moderno y humano: análisis profundo, comunicación clara y estrategia.
-          <span class="text-ink-900 font-medium">Consulta inicial sin cargo.</span>
-        </p>
+<!-- BARRA CONTACTO -->
 
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#contacto" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand text-white font-semibold shadow-glow hover:brightness-110 transition">
-            Enviar consulta
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M5 12h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+<div class="bg-white border-b">
 
-          <a href="tel:+541149537866" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white border border-slate-200 hover:border-slate-300 shadow-soft transition text-ink-900 font-semibold">
-            Llamar ahora
-            <span class="text-ink-500 text-sm font-medium">(4953-7866)</span>
-          </a>
-        </div>
+<div class="max-w-7xl mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between gap-2 text-sm text-gray-600">
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-3">
-          <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-soft">
-            <div class="text-ink-900 font-semibold">Respuesta rápida</div>
-            <div class="text-ink-500 text-sm">Priorizamos urgencias</div>
-          </div>
-          <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-soft">
-            <div class="text-ink-900 font-semibold">Diagnóstico claro</div>
-            <div class="text-ink-500 text-sm">Próximos pasos</div>
-          </div>
-          <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-soft hidden sm:block">
-            <div class="text-ink-900 font-semibold">Confidencial</div>
-            <div class="text-ink-500 text-sm">Tratamiento serio</div>
-          </div>
-        </div>
-      </div>
+<div>
 
-      <div class="reveal">
-        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-deep">
-          <div class="flex items-center gap-4">
-            <div class="w-14 h-14 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center">
-              <svg class="w-7 h-7 text-brand" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 5-3.4 9-8 10-4.6-1-8-5-8-10V7l8-4z" stroke="currentColor" stroke-width="2"/></svg>
-            </div>
-            <div>
-              <div class="font-serif text-2xl text-ink-900">Acompañamiento legal</div>
-              <div class="text-ink-500 text-sm">Estrategia • Evidencia • Resultados</div>
-            </div>
-          </div>
+Info@estudiojuridicost.com.ar
 
-          <div class="mt-6 grid gap-3">
-            <div class="rounded-2xl p-4 border border-slate-200 bg-slate-50">
-              <div class="text-sm text-ink-500">📌 Consulta inicial</div>
-              <div class="text-ink-900 font-semibold">Sin cargo y confidencial</div>
-            </div>
-            <div class="rounded-2xl p-4 border border-slate-200 bg-slate-50">
-              <div class="text-sm text-ink-500">🧠 Enfoque</div>
-              <div class="text-ink-900 font-semibold">Análisis profundo + claridad</div>
-            </div>
-            <div class="rounded-2xl p-4 border border-slate-200 bg-slate-50">
-              <div class="text-sm text-ink-500">🛡️ Defensa</div>
-              <div class="text-ink-900 font-semibold">Firme, honesta y estratégica</div>
-            </div>
-          </div>
+</div>
 
-          <div class="mt-6 text-xs text-ink-500 flex items-center justify-between">
-            <span>Buenos Aires, Argentina</span>
-            <span class="text-brand font-semibold tracking-widest uppercase">Estudio ST</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+<div class="flex flex-wrap gap-4">
 
-  <!-- ESPECIALIDADES -->
-  <section id="especialidades" class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto reveal">
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">Especialidades</h2>
-        <p class="mt-4 text-ink-500 text-lg">Contanos tu situación. Te respondemos con un diagnóstico claro.</p>
-      </div>
+<a href="tel:+541149537866">4953-7866</a>
 
-      <div class="mt-12 grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-soft hover:shadow-glow transition reveal">
-          <h3 class="font-serif text-2xl text-ink-900">Derecho Laboral</h3>
-          <p class="mt-3 text-ink-500">Despidos • diferencias salariales • conflictos</p>
-          <p class="mt-4 text-ink-500 leading-relaxed">
-            Defensa ante despidos sin causa, suspensiones, falta de pago, registración y conflictos laborales.
-          </p>
-          <a href="#contacto" class="mt-6 inline-flex w-full items-center justify-center px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition font-semibold text-ink-900">
-            Consultar caso laboral
-          </a>
-        </div>
+<a href="tel:+541149537804">4953-7866/04</a>
 
-        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-soft hover:shadow-glow transition reveal">
-          <h3 class="font-serif text-2xl text-ink-900">Sucesiones</h3>
-          <p class="mt-3 text-ink-500">Herencias • declaratorias • acuerdos</p>
-          <p class="mt-4 text-ink-500 leading-relaxed">
-            Sucesiones ordenadas y transparentes: declaratoria, bienes, acuerdos familiares y conflictos.
-          </p>
-          <a href="#contacto" class="mt-6 inline-flex w-full items-center justify-center px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition font-semibold text-ink-900">
-            Consultar sucesiones
-          </a>
-        </div>
+<a href="tel:+541149541518">4954-1518</a>
 
-        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-soft hover:shadow-glow transition reveal">
-          <h3 class="font-serif text-2xl text-ink-900">Accidentes</h3>
-          <p class="mt-3 text-ink-500">Tránsito • laborales • indemnizaciones</p>
-          <p class="mt-4 text-ink-500 leading-relaxed">
-            Representación a víctimas de accidentes de tránsito y laborales. Evaluación e indemnización.
-          </p>
-          <a href="#contacto" class="mt-6 inline-flex w-full items-center justify-center px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition font-semibold text-ink-900">
-            Consultar accidente
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+<a href="https://wa.me/5491157018080" target="_blank">
+WhatsApp 11-5701-8080
+</a>
 
-  <!-- TRAYECTORIA -->
-  <section id="trayectoria" class="py-20 border-t border-slate-200 bg-white">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
-      <div class="reveal">
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">Trayectoria que se nota</h2>
-        <p class="mt-5 text-ink-500 text-lg leading-relaxed">
-          Acompañamos casos complejos con criterio y responsabilidad. Diferencial: <span class="text-ink-900 font-medium">estrategia + claridad + compromiso</span>.
-        </p>
-        <div class="mt-8 grid sm:grid-cols-2 gap-4">
-          <div class="rounded-2xl p-5 border border-slate-200 bg-slate-50">
-            <div class="text-ink-900 font-semibold">45+ años</div>
-            <div class="text-ink-500 text-sm">Trayectoria ininterrumpida</div>
-          </div>
-          <div class="rounded-2xl p-5 border border-slate-200 bg-slate-50">
-            <div class="text-ink-900 font-semibold">Atención humana</div>
-            <div class="text-ink-500 text-sm">Comunicación sin vueltas</div>
-          </div>
-          <div class="rounded-2xl p-5 border border-slate-200 bg-slate-50">
-            <div class="text-ink-900 font-semibold">Estrategia</div>
-            <div class="text-ink-500 text-sm">Plan claro de acción</div>
-          </div>
-          <div class="rounded-2xl p-5 border border-slate-200 bg-slate-50">
-            <div class="text-ink-900 font-semibold">Confidencialidad</div>
-            <div class="text-ink-500 text-sm">Resguardo total</div>
-          </div>
-        </div>
-      </div>
+</div>
 
-      <div class="reveal">
-        <div class="rounded-3xl p-8 border border-slate-200 shadow-deep bg-slate-50">
-          <div class="font-serif text-2xl text-ink-900">Compromiso profesional</div>
-          <p class="mt-4 text-ink-500 leading-relaxed">
-            Cada situación requiere una estrategia específica. Respondemos con claridad sobre viabilidad, tiempos, riesgos y próximos pasos.
-          </p>
-          <div class="mt-6 flex flex-col sm:flex-row gap-3">
-            <a href="#contacto" class="px-6 py-3 rounded-xl bg-brand text-white font-semibold shadow-glow hover:brightness-110 transition text-center">
-              Enviar consulta
-            </a>
-            <a href="mailto:Info@estudiojuridicost.com.ar" class="px-6 py-3 rounded-xl bg-white border border-slate-200 hover:border-slate-300 transition text-center font-semibold text-ink-900">
-              Escribir por mail
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</div>
 
-  <!-- PROCESO -->
-  <section id="proceso" class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto reveal">
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">Cómo trabajamos</h2>
-        <p class="mt-4 text-ink-500 text-lg">Proceso claro, profesional y sin sorpresas.</p>
-      </div>
+</div>
 
-      <div class="mt-12 grid md:grid-cols-4 gap-6">
-        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft reveal">
-          <div class="text-brand font-semibold tracking-widest text-xs uppercase">Paso 1</div>
-          <div class="font-serif text-2xl mt-2 text-ink-900">Consulta</div>
-          <p class="text-ink-500 mt-3">Nos contás tu situación. Confidencialidad total.</p>
-        </div>
-        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft reveal">
-          <div class="text-brand font-semibold tracking-widest text-xs uppercase">Paso 2</div>
-          <div class="font-serif text-2xl mt-2 text-ink-900">Diagnóstico</div>
-          <p class="text-ink-500 mt-3">Viabilidad, riesgos, opciones y próximos pasos.</p>
-        </div>
-        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft reveal">
-          <div class="text-brand font-semibold tracking-widest text-xs uppercase">Paso 3</div>
-          <div class="font-serif text-2xl mt-2 text-ink-900">Estrategia</div>
-          <p class="text-ink-500 mt-3">Negociación, mediación o vía judicial.</p>
-        </div>
-        <div class="bg-white rounded-3xl p-7 border border-slate-200 shadow-soft reveal">
-          <div class="text-brand font-semibold tracking-widest text-xs uppercase">Paso 4</div>
-          <div class="font-serif text-2xl mt-2 text-ink-900">Ejecución</div>
-          <p class="text-ink-500 mt-3">Acción profesional y seguimiento del caso.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="py-20 border-t border-slate-200 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto reveal">
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">Preguntas frecuentes</h2>
-        <p class="mt-4 text-ink-500 text-lg">Transparencia total desde el primer contacto.</p>
-      </div>
 
-      <div class="mt-10 max-w-3xl mx-auto space-y-4">
-        <details class="bg-slate-50 rounded-2xl p-5 border border-slate-200 reveal">
-          <summary class="cursor-pointer font-semibold text-ink-900">¿La consulta inicial tiene costo?</summary>
-          <p class="mt-3 text-ink-500 leading-relaxed">La consulta inicial es sin cargo. Luego se informa el esquema de trabajo y honorarios con claridad.</p>
-        </details>
-        <details class="bg-slate-50 rounded-2xl p-5 border border-slate-200 reveal">
-          <summary class="cursor-pointer font-semibold text-ink-900">¿Qué información conviene enviar?</summary>
-          <p class="mt-3 text-ink-500 leading-relaxed">Resumen del caso, fechas, lugar y partes involucradas. No adjuntes documentos por el formulario; luego coordinamos el envío seguro.</p>
-        </details>
-        <details class="bg-slate-50 rounded-2xl p-5 border border-slate-200 reveal">
-          <summary class="cursor-pointer font-semibold text-ink-900">¿Cuánto tardan en responder?</summary>
-          <p class="mt-3 text-ink-500 leading-relaxed">Intentamos responder a la brevedad. Si es urgente, indicá “URGENTE” al inicio del mensaje.</p>
-        </details>
-      </div>
-    </div>
-  </section>
+<!-- NAV -->
 
-  <!-- CONTACTO (ENVÍA EMAIL REAL) -->
-  <section id="contacto" class="py-20">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-start">
-      <div class="reveal">
-        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">Enviar consulta</h2>
-        <p class="mt-4 text-ink-500 text-lg leading-relaxed">
-          Completá el formulario. El estudio recibe tu consulta por email:
-          <span class="text-ink-900 font-medium">Info@estudiojuridicost.com.ar</span>
-        </p>
+<nav class="bg-white shadow-sm">
 
-        <div class="mt-8 bg-white rounded-3xl p-7 border border-slate-200 shadow-soft">
-          <div class="text-ink-500 text-sm">Contacto directo</div>
-          <div class="mt-2 space-y-2">
-            <a href="mailto:Info@estudiojuridicost.com.ar" class="block text-ink-900 font-semibold underline decoration-slate-300 hover:decoration-ink-900">
-              Info@estudiojuridicost.com.ar
-            </a>
-            <div class="text-ink-700">
-              <a href="tel:+541149537866" class="underline decoration-slate-300 hover:decoration-ink-900">4953-7866</a>
-              <span class="text-slate-300"> / </span>
-              <a href="tel:+541149537804" class="underline decoration-slate-300 hover:decoration-ink-900">4953-7866/04</a>
-              <span class="text-slate-300"> • </span>
-              <a href="tel:+541149541518" class="underline decoration-slate-300 hover:decoration-ink-900">4954-1518</a>
-            </div>
-          </div>
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
-          <div class="mt-6 text-xs text-ink-500 leading-relaxed">
-            Nota: por seguridad, no adjuntes documentos por este formulario. Luego coordinamos el envío por un canal seguro.
-          </div>
-        </div>
-      </div>
+<div class="flex items-center gap-3">
 
-      <div class="reveal">
-        <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-deep">
-          <div class="flex items-center justify-between">
-            <div>
-              <div class="text-ink-900 font-semibold">Consulta confidencial</div>
-              <div class="text-ink-500 text-sm">Te respondemos a la brevedad</div>
-            </div>
-            <span class="text-brand text-xs font-semibold tracking-widest uppercase">Formulario</span>
-          </div>
+<img src="logo.jpg" class="h-12">
 
-          <!-- ENVÍO REAL: FormSubmit (sin backend) -->
-          <form id="contactForm"
-                action="https://formsubmit.co/Info@estudiojuridicost.com.ar"
-                method="POST"
-                class="mt-6 space-y-4">
+<div>
 
-            <input type="hidden" name="_subject" value="Nueva consulta desde la web — Estudio Jurídico ST" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_autoresponse" value="Recibimos tu consulta. Gracias por contactarte. Te responderemos a la brevedad." />
-            <input type="hidden" name="_next" value="#" />
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+<div class="font-serif text-lg">
+Sabbagh, Testado
+</div>
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-ink-500">Nombre y apellido</label>
-                <input class="mt-1 w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus-ring"
-                       name="nombre" required minlength="3" placeholder="Tu nombre" />
-              </div>
-              <div>
-                <label class="text-xs text-ink-500">Teléfono</label>
-                <input class="mt-1 w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus-ring"
-                       name="telefono" inputmode="tel" placeholder="Ej: 11 1234-5678" />
-              </div>
-            </div>
+<div class="text-brand text-xs uppercase tracking-widest">
+& Asociados
+</div>
 
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label class="text-xs text-ink-500">Email</label>
-                <input class="mt-1 w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus-ring"
-                       name="email" type="email" required placeholder="tuemail@dominio.com" />
-              </div>
-              <div>
-                <label class="text-xs text-ink-500">Área</label>
-                <select class="mt-1 w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus-ring"
-                        name="area" required>
-                  <option value="" selected disabled>Seleccionar</option>
-                  <option>Derecho Laboral</option>
-                  <option>Sucesiones</option>
-                  <option>Accidentes</option>
-                  <option>Otra consulta</option>
-                </select>
-              </div>
-            </div>
+</div>
 
-            <div>
-              <label class="text-xs text-ink-500">Tu consulta</label>
-              <textarea class="mt-1 w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus-ring"
-                        name="consulta" rows="6" required minlength="20"
-                        placeholder="Contanos el caso (fechas, qué pasó y qué necesitás). Si es urgente, escribí URGENTE al inicio."></textarea>
-            </div>
+</div>
 
-            <div class="flex items-start gap-3 text-xs text-ink-500">
-              <input id="ok" type="checkbox" class="mt-1" required />
-              <label for="ok" class="leading-relaxed">
-                Confirmo que la información enviada es verdadera y acepto ser contactado para ampliar datos del caso.
-              </label>
-            </div>
 
-            <button id="sendBtn" type="submit"
-                    class="w-full px-6 py-4 rounded-xl bg-brand text-white font-semibold shadow-glow hover:brightness-110 transition">
-              Enviar consulta al estudio
-            </button>
 
-            <div id="okMsg" class="hidden mt-4 rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-900">
-              ✅ Consulta enviada. Gracias. Te responderemos a la brevedad.
-            </div>
+<div class="hidden md:flex gap-8 text-sm">
 
-            <div id="errMsg" class="hidden mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-900">
-              ⚠️ No se pudo enviar. Probá nuevamente o escribí a <b>Info@estudiojuridicost.com.ar</b>.
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+<a href="#especialidades">Especialidades</a>
 
-  <footer class="border-t border-slate-200 py-10 bg-white">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row gap-4 items-center justify-between text-xs text-ink-500">
-      <div>© <span id="year"></span> Estudio Jurídico Sabbagh, Testado & Asoc. • Buenos Aires, Argentina</div>
-      <div class="flex items-center gap-4">
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900" href="mailto:Info@estudiojuridicost.com.ar">Email</a>
-        <a class="hover:text-ink-900 transition underline decoration-slate-300 hover:decoration-ink-900" href="tel:+541149537866">Llamar</a>
-      </div>
-    </div>
-  </footer>
+<a href="#trayectoria">Trayectoria</a>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+<a href="#blog">Blog</a>
 
-    // Mobile menu
-    const btn = document.getElementById('menuBtn');
-    const menu = document.getElementById('mobileMenu');
-    if (btn && menu) {
-      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-      menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
-    }
+<a href="#contacto"
+class="bg-brand text-white px-5 py-3 rounded-lg">
+Respuesta inmediata
+</a>
 
-    // Progress bar
-    const progress = document.getElementById('progress');
-    const onScroll = () => {
-      const h = document.documentElement;
-      const st = h.scrollTop || document.body.scrollTop;
-      const sh = (h.scrollHeight || document.body.scrollHeight) - h.clientHeight;
-      const p = sh > 0 ? (st / sh) * 100 : 0;
-      progress.style.width = p.toFixed(2) + '%';
-    };
-    window.addEventListener('scroll', onScroll, { passive:true });
-    onScroll();
+</div>
 
-    // Reveal on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</div>
 
-    // Premium UX submit (sin redirección)
-    const form = document.getElementById('contactForm');
-    const okMsg = document.getElementById('okMsg');
-    const errMsg = document.getElementById('errMsg');
-    const sendBtn = document.getElementById('sendBtn');
+</nav>
 
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      okMsg.classList.add('hidden');
-      errMsg.classList.add('hidden');
-      sendBtn.disabled = true;
-      const old = sendBtn.textContent;
-      sendBtn.textContent = 'Enviando...';
 
-      try {
-        const data = new FormData(form);
-        const res = await fetch(form.action, { method:'POST', body:data, headers:{ 'Accept':'application/json' } });
 
-        if (res.ok) {
-          form.reset();
-          okMsg.classList.remove('hidden');
-        } else {
-          errMsg.classList.remove('hidden');
-        }
-      } catch {
-        errMsg.classList.remove('hidden');
-      } finally {
-        sendBtn.disabled = false;
-        sendBtn.textContent = old;
-      }
-    });
-  </script>
+<!-- HERO -->
+
+<section class="py-16 bg-white">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+
+<h1 class="text-5xl leading-tight mb-6">
+
+Defensa jurídica  
+<span class="text-brand">con experiencia real</span>
+
+</h1>
+
+<p class="text-xl text-gray-600 mb-8">
+
+Más de 45 años acompañando a empresas y particulares
+en la resolución de conflictos legales.
+
+</p>
+
+<a href="#contacto"
+class="bg-brand text-white px-8 py-4 rounded-lg text-lg">
+
+Respuesta inmediata
+
+</a>
+
+</div>
+
+
+
+<div class="bg-white shadow-xl rounded-xl p-8 border">
+
+<h3 class="text-2xl mb-6">
+Enviar consulta
+</h3>
+
+<form
+action="https://formsubmit.co/Info@estudiojuridicost.com.ar"
+method="POST"
+class="space-y-4">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text"
+name="nombre"
+placeholder="Nombre"
+class="w-full border rounded-lg px-4 py-3"
+required>
+
+<input type="email"
+name="email"
+placeholder="Email"
+class="w-full border rounded-lg px-4 py-3"
+required>
+
+<input type="tel"
+name="telefono"
+placeholder="Teléfono"
+class="w-full border rounded-lg px-4 py-3">
+
+<textarea
+name="consulta"
+placeholder="Contanos tu situación"
+class="w-full border rounded-lg px-4 py-3 h-32"
+required></textarea>
+
+<button
+class="w-full bg-brand text-white py-4 rounded-lg text-lg">
+
+Enviar consulta
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ESPECIALIDADES -->
+
+<section id="especialidades" class="py-20">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl text-center mb-12">
+
+Especialidades
+
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white p-8 shadow rounded-lg">
+
+<h3 class="text-xl mb-4 font-semibold">
+Derecho Laboral
+</h3>
+
+<p class="text-gray-600">
+
+Asesoramiento y representación en conflictos laborales,
+despidos, reclamos salariales y relaciones laborales
+tanto para trabajadores como para empresas.
+
+</p>
+
+</div>
+
+
+
+<div class="bg-white p-8 shadow rounded-lg">
+
+<h3 class="text-xl mb-4 font-semibold">
+Sucesiones
+</h3>
+
+<p class="text-gray-600">
+
+Gestión integral de sucesiones,
+administración de herencias y resolución
+de conflictos familiares.
+
+</p>
+
+</div>
+
+
+
+<div class="bg-white p-8 shadow rounded-lg">
+
+<h3 class="text-xl mb-4 font-semibold">
+Accidentes
+</h3>
+
+<p class="text-gray-600">
+
+Asesoramiento legal en accidentes de tránsito
+y laborales, evaluación de responsabilidades
+y reclamos indemnizatorios.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TRAYECTORIA -->
+
+<section id="trayectoria" class="py-20 bg-white">
+
+<div class="max-w-4xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl mb-6">
+
+Más de 45 años de trayectoria
+
+</h2>
+
+<p class="text-lg text-gray-600 leading-relaxed">
+
+El Estudio Jurídico Sabbagh, Testado & Asoc.
+brinda asesoramiento jurídico a empresas y particulares
+desde hace más de cuatro décadas,
+con un enfoque profesional,
+serio y orientado a resultados.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- BLOG -->
+
+<section id="blog" class="py-20">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-4xl text-center mb-12">
+Artículos y novedades
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="bg-white p-6 rounded-xl shadow">
+
+<h3 class="font-semibold text-lg">
+¿Qué hacer ante un despido?
+</h3>
+
+<p class="text-gray-600 mt-2">
+Aspectos clave que conviene revisar antes de firmar
+una liquidación.
+</p>
+
+</div>
+
+
+
+<div class="bg-white p-6 rounded-xl shadow">
+
+<h3 class="font-semibold text-lg">
+Cómo iniciar una sucesión
+</h3>
+
+<p class="text-gray-600 mt-2">
+Pasos habituales en un proceso sucesorio
+y tiempos estimados.
+</p>
+
+</div>
+
+
+
+<div class="bg-white p-6 rounded-xl shadow">
+
+<h3 class="font-semibold text-lg">
+Accidentes de tránsito
+</h3>
+
+<p class="text-gray-600 mt-2">
+Qué hacer legalmente después de un accidente.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="py-20 bg-white">
+
+<div class="max-w-4xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl mb-6">
+
+Contacto
+
+</h2>
+
+<p class="text-lg text-gray-600 mb-8">
+
+Podés comunicarte directamente con el estudio
+o enviarnos tu consulta.
+
+</p>
+
+<div class="space-y-2">
+
+<div>
+Info@estudiojuridicost.com.ar
+</div>
+
+<div>
+4953-7866 / 4953-7804 / 4954-1518
+</div>
+
+<div>
+WhatsApp 11-5701-8080
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer class="bg-gray-100 py-10">
+
+<div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+
+© 2026  
+Estudio Jurídico Sabbagh, Testado & Asociados  
+Buenos Aires
+
+</div>
+
+</footer>
+
+
+
 </body>
 </html>
