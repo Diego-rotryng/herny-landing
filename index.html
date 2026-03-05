@@ -25,7 +25,7 @@ theme:{
 extend:{
 fontFamily:{
 serif:['Cinzel','serif'],
-sans:['Inter','sans-serif']
+sans:['Inter','system-ui','sans-serif']
 },
 colors:{
 brand:'#9F3B58'
@@ -38,13 +38,9 @@ brand:'#9F3B58'
 
 <style>
 
-body{
-font-family:Inter;
-}
+body{font-family:Inter}
 
-h1,h2,h3{
-font-family:Cinzel;
-}
+h1,h2,h3{font-family:Cinzel}
 
 </style>
 
@@ -58,17 +54,20 @@ font-family:Cinzel;
 
 <!-- CABEZA -->
 
-<div>
-<img src="cabeza-pagina.jpg" class="w-full h-[120px] sm:h-[150px] object-cover">
+<div class="bg-white flex justify-center border-b">
+
+<img src="cabeza-pagina.jpg"
+class="max-h-[110px] w-auto object-contain py-2">
+
 </div>
 
 
 
-<!-- BARRA CONTACTO -->
+<!-- CONTACT BAR -->
 
 <div class="bg-white border-b">
 
-<div class="max-w-7xl mx-auto px-6 py-3 flex flex-col sm:flex-row justify-between gap-2 text-sm text-gray-600">
+<div class="max-w-7xl mx-auto px-6 py-2 flex flex-col sm:flex-row justify-between gap-2 text-sm text-gray-600">
 
 <div>
 
@@ -80,11 +79,11 @@ Info@estudiojuridicost.com.ar
 
 <a href="tel:+541149537866">4953-7866</a>
 
-<a href="tel:+541149537804">4953-7866/04</a>
+<a href="tel:+541149537804">4953-7804</a>
 
 <a href="tel:+541149541518">4954-1518</a>
 
-<a href="https://wa.me/5491157018080" target="_blank">
+<a href="https://wa.me/5491157018080" class="text-brand font-semibold">
 WhatsApp 11-5701-8080
 </a>
 
@@ -104,7 +103,7 @@ WhatsApp 11-5701-8080
 
 <div class="flex items-center gap-3">
 
-<img src="logo.jpg" class="h-12">
+<img src="logo.jpg" class="h-12 w-12 rounded-xl border">
 
 <div>
 
@@ -122,7 +121,7 @@ Sabbagh, Testado
 
 
 
-<div class="hidden md:flex gap-8 text-sm">
+<div class="hidden md:flex gap-8 text-sm items-center">
 
 <a href="#especialidades">Especialidades</a>
 
@@ -131,8 +130,10 @@ Sabbagh, Testado
 <a href="#blog">Blog</a>
 
 <a href="#contacto"
-class="bg-brand text-white px-5 py-3 rounded-lg">
+class="bg-brand text-white px-6 py-3 rounded-lg font-semibold">
+
 Respuesta inmediata
+
 </a>
 
 </div>
@@ -236,9 +237,7 @@ Enviar consulta
 <div class="max-w-7xl mx-auto px-6">
 
 <h2 class="text-4xl text-center mb-12">
-
 Especialidades
-
 </h2>
 
 <div class="grid md:grid-cols-3 gap-10">
@@ -250,11 +249,8 @@ Derecho Laboral
 </h3>
 
 <p class="text-gray-600">
-
-Asesoramiento y representación en conflictos laborales,
-despidos, reclamos salariales y relaciones laborales
-tanto para trabajadores como para empresas.
-
+Conflictos laborales, despidos, reclamos salariales
+y asesoramiento tanto para trabajadores como empresas.
 </p>
 
 </div>
@@ -268,11 +264,7 @@ Sucesiones
 </h3>
 
 <p class="text-gray-600">
-
-Gestión integral de sucesiones,
-administración de herencias y resolución
-de conflictos familiares.
-
+Gestión integral de sucesiones y resolución de conflictos familiares.
 </p>
 
 </div>
@@ -286,11 +278,7 @@ Accidentes
 </h3>
 
 <p class="text-gray-600">
-
-Asesoramiento legal en accidentes de tránsito
-y laborales, evaluación de responsabilidades
-y reclamos indemnizatorios.
-
+Asesoramiento legal en accidentes de tránsito y laborales.
 </p>
 
 </div>
@@ -310,18 +298,14 @@ y reclamos indemnizatorios.
 <div class="max-w-4xl mx-auto px-6 text-center">
 
 <h2 class="text-4xl mb-6">
-
 Más de 45 años de trayectoria
-
 </h2>
 
 <p class="text-lg text-gray-600 leading-relaxed">
 
 El Estudio Jurídico Sabbagh, Testado & Asoc.
 brinda asesoramiento jurídico a empresas y particulares
-desde hace más de cuatro décadas,
-con un enfoque profesional,
-serio y orientado a resultados.
+desde hace más de cuatro décadas.
 
 </p>
 
@@ -350,8 +334,7 @@ Artículos y novedades
 </h3>
 
 <p class="text-gray-600 mt-2">
-Aspectos clave que conviene revisar antes de firmar
-una liquidación.
+Aspectos legales clave antes de firmar una liquidación.
 </p>
 
 </div>
@@ -365,8 +348,7 @@ Cómo iniciar una sucesión
 </h3>
 
 <p class="text-gray-600 mt-2">
-Pasos habituales en un proceso sucesorio
-y tiempos estimados.
+Pasos habituales en un proceso sucesorio.
 </p>
 
 </div>
@@ -400,16 +382,11 @@ Qué hacer legalmente después de un accidente.
 <div class="max-w-4xl mx-auto px-6 text-center">
 
 <h2 class="text-4xl mb-6">
-
 Contacto
-
 </h2>
 
 <p class="text-lg text-gray-600 mb-8">
-
-Podés comunicarte directamente con el estudio
-o enviarnos tu consulta.
-
+Podés comunicarte directamente con el estudio o enviarnos tu consulta.
 </p>
 
 <div class="space-y-2">
@@ -419,7 +396,7 @@ Info@estudiojuridicost.com.ar
 </div>
 
 <div>
-4953-7866 / 4953-7804 / 4954-1518
+4953-7866 • 4953-7804 • 4954-1518
 </div>
 
 <div>
@@ -445,6 +422,31 @@ Buenos Aires
 </div>
 
 </footer>
+
+
+
+<!-- WHATSAPP FLOTANTE -->
+
+<a href="https://wa.me/5491157018080"
+target="_blank"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 16px;
+border-radius:40px;
+font-weight:600;
+font-size:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+text-decoration:none;
+z-index:999;
+">
+
+WhatsApp
+
+</a>
 
 
 
